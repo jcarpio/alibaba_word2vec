@@ -9,7 +9,9 @@ RUN mkdir /tmp/word2vec
 
 WORKDIR /tmp/word2vec
 COPY requirements.txt /tmp/word2vec
+COPY service.py /tmp/word2vec
+COPY model.py /tmp/word2vec
 
 RUN pip3 install -r /tmp/word2vec/requirements.txt
 
-CMD [ "python", "./service.py" ]
+CMD [ "python3", "/tmp/word2vec/service.py" ]
