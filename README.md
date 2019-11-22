@@ -4,4 +4,5 @@ https://www.alibabacloud.com/blog/how-to-create-and-deploy-a-pre-trained-word2ve
 Execute:
 
 docker build -t model .
+
 docker run -p 5000:5000 model
